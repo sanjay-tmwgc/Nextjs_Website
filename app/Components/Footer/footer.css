@@ -1,0 +1,7 @@
+.footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 64px 80px;
+    gap: 56px;
+  }

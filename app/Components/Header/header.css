@@ -1,0 +1,18 @@
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 24px 100px;
+  }
+.button1 button{
+ 
+   width: 134px;
+   height: 40px;
+   padding:12px, 24px, 12px, 24px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #00a9ff;
+   border: none;
+   outline: none;
+    color: aliceblue;
+}
