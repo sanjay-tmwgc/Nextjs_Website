@@ -3,10 +3,11 @@ import "./page.css";
 import Header from "./Components/Header/page"
 import Footer from "./Components/Footer/footer"
 
+
 export default function pages() {
   return (
     <>
-   <div>
+   <div >
     {/* first phase */}
     <div className='img1'>
       {/* <img src='/img.svg' /> */}
@@ -52,8 +53,10 @@ export default function pages() {
         </div>
       </div> 
     </div>
+
+    {/* second phase sub */}
     <div className='flowdiagram'>
-        <div></div>
+        <div className='flow-empty'></div>
         <div className='flowbox-one'>
           <img src="/flow-group.svg" />
           <p>ANNUITIES</p>
@@ -94,61 +97,123 @@ export default function pages() {
         <p>Contact <span className='thirdphase-subword'>SKY FINANCIAL </span>today to schedule a consultation with one of our experienced agents. We're here to answer your questions, address your concerns, and help you find the perfect insurance solutions for your needs.</p>
       </div>
       <div className='thirdphase-form'>
-        <div className='subform-one'>
+        <form>  
+          <div className='subform-one'>
           <div className='subform-item1'>
             <div>
               <img src="/formuser.svg" />
-              <input type='text' placeholder='Name' color='#777777'/>
+              <input type='text' placeholder='Name' color='#777777' required/>
             </div>
             <div>
               <img src="/formuser.svg" />
-              <input type='text' placeholder='Subject' color='#777777'/>
+              <input type='text' placeholder='Subject' color='#777777'required/>
             </div>
           </div>
           <div className='subform-item2'>
             <div>
               <img src="formmail.svg" />
-              <input type='email' placeholder='E-mail'color='#777777'/>
+              <input type='email' placeholder='E-mail'color='#777777' required/>
             </div>
             <div>
               <img src="formphone.svg" />
-              <input type='string' placeholder='Phone'color='#777777'/>
+              <input type='string' placeholder='Phone'color='#777777' required/>
             </div>
           </div>
           <div className='subform-item3'>
-            <input type='text' placeholder='Message'color='#777777'/>
+            <textarea placeholder='Message' color='#777777' required></textarea>
           </div>
-        </div>
-        <div className='subform-two'>
+          </div>
+          <div className='subform-two'>
           <input type='submit' value='Get in touch'/>  
-        </div>
+          </div>
+        </form>  
       </div>
     </div>
 
     {/*fourth phase*/}
     <div className='fourthphase'>
-      <div className='fourth-sub-one'>
-        <div className='fourth-one-item1'>
-          <p>
-          How much life insurance do I actually need?
-          </p>
-        </div>
-        <div className='fourth-one-item2'>
-          <p>How can I be sure I'm getting the best rates?</p>
-        </div>
-         <div className='fourth-one-item3'>
-          <p>How long does it take to get approved for life insurance coverage?</p>
-         </div>
-         <div className='fourth-one-item4'>
-          <p>What happens if I outlive the term of my life insurance policy?</p>
-         </div>
-         <div className='fourth-one-item5'>
-          <p>How can I ensure my life insurance policy adequately protects my loved ones?</p>
-         </div>
-      </div>
+    <div className="accordion">
+        <details className="accordion-item">
+            <summary className="accordion-header">
+                <span className="accordion-title">How much life insurance do I actually need?</span>
+                <img src="scrolldown.svg" alt="Symbol 1" className="accordion-icon"/>
+            </summary>
+            <div className="accordion-content">
+                <p>Determining your life insurance needs depends on various factors like your income, debts, and future expenses.</p>
+                <br />
+                <p>A general rule of thumb is to aim for coverage that's 5-10 times your annual income.</p>
+                <br />
+                <p>However, it's crucial to consider your specific circumstances, such as outstanding debts, education expenses for dependents, and future financial goals.</p>
+                <br />
+                <p>Consulting with our financial advisor can help tailor a policy that adequately protects your loved ones and aligns with your long-term plans.</p>
+            </div>
+        </details>
+        <details className="accordion-item">
+            <summary className="accordion-header">
+                <span className="accordion-title">How can I be sure I'm getting the best rates?</span>
+                <img src="scrolldown.svg" alt="Symbol 2" className="accordion-icon"/>
+            </summary>
+            <div className="accordion-content">
+                <p>At our agency, ensuring you get the best rates is our priority.</p>
+                <br />
+                <p>We leverage our extensive network and expertise to scout for the most competitive offers tailored to your needs.</p>
+                <br />
+                <p>Our transparent approach means you'll always know you're getting the best deal available. </p>
+                <br />
+                <p>We continuously monitor the market to keep your rates optimized. Trust in our commitment to securing your financial future at the most favourable terms.</p>
+            </div>
+        </details>
+        <details className="accordion-item">
+            <summary className="accordion-header">
+                <span className="accordion-title">How long does it take to get approved for life insurance coverage?</span>
+                <img src="scrolldown.svg" alt="Symbol 3" className="accordion-icon"/>
+            </summary>
+            <div className="accordion-content">
+                <p>The approval process for life insurance coverage typically ranges from a few days to several weeks.</p>
+                <br />
+                <p>Factors such as the type of policy, your health, and the insurer's underwriting process influence the timeline.</p>
+                <br />
+                <p>Generally, simpler policies like term life insurance may be approved more quickly, while complex policies or those requiring medical exams may take longer.</p>
+                <br />
+                <p>Rest assured, we strive to expedite the process while ensuring thoroughness to provide you with the best coverage efficiently.</p>
+            </div>
+        </details>
+        <details className="accordion-item">
+            <summary className="accordion-header">
+                <span className="accordion-title">What happens if I outlive the term of my life insurance policy?</span>
+                <img src="scrolldown.svg" alt="Symbol 4" className="accordion-icon"/>
+            </summary>
+            <div className="accordion-content">
+                <p>If you outlive the term of your life insurance policy, there are several options available.</p>
+                <br />
+                <p>You can choose to renew the policy, convert it to a permanent life insurance policy if available, or simply let it expire. </p>
+                <br />
+                <p>It's important to review your options with your insurance provider to determine the best course of action based on your current needs and financial situation.</p>
+                <br />
+                <p>Additionally, some policies may offer the option to receive a pay-out of the premiums paid, though this varies depending on the terms of your policy.</p>
+            </div>
+        </details>
+        <details className="accordion-item">
+            <summary className="accordion-header">
+                <span className="accordion-title">How can I ensure my life insurance policy adequately protects my loved ones?</span>
+                <img src="scrolldown.svg" alt="Symbol 5" className="accordion-icon"/>
+            </summary>
+            <div className="accordion-content">
+                <p>To ensure your life insurance adequately protects your loved ones, start by assessing your family's financial needs and future obligations.</p>
+                <br />
+                <p>Consider factors like mortgage payments, education expenses, and living costs. </p>
+                <br />
+                <p>Next, work closely with our expert advisors to tailor a policy that aligns with your unique circumstances and provides sufficient coverage. </p>
+                <br />
+                <p>Regularly review and update your policy to accommodate any changes in your life situation. </p>
+                <br />
+                <p>Rest assured, our commitment to personalized guidance ensures your loved ones are safeguarded against life's uncertainties.</p>
+            </div>
+        </details>
+    </div>
       <div className='fourth-sub-two'>
         <h5>FREQUENTLY ASKED QUESTIONS</h5>
-        <h1>Get the Answers You Need<span>.</span></h1>
+        <h1>Get the Answers You <br/> Need<span>.</span></h1>
         <div>
           <p>Have questions about life insurance? Explore our FAQs for clear, concise answers to help you make informed decisions about your coverage options.</p>
         </div>
@@ -160,6 +225,10 @@ export default function pages() {
     </div> 
     
    </div>
+  
+    
+
+    
 </>
   )
 }

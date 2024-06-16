@@ -6,7 +6,7 @@
 
 }
 
-.img1{
+.img1{ 
   background-image: url(../public//img.svg);
   background-size: cover;
   /*position: absolute; */
@@ -14,10 +14,11 @@
   /* left: 0; */
   /* width: 1440px; */
   /* height: 952px; */
-  background-size: cover;
   z-index: -1;
 
-}
+} 
+
+
  
 .imagecontent h1 {
   max-width: 37rem;
@@ -62,13 +63,15 @@
 
 .secondphase{
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-auto-flow: column;
+  /* grid-template-columns: 1fr 8fr; */
   align-items: center;
   padding: 75px 40px;
   column-gap: 45px;
 }
 .secondphase-para {
   display: grid;
+  grid-auto-flow: row;
   row-gap: 30px ;
   
 }
@@ -80,8 +83,13 @@
   color: #00a9ff;
   font-weight: 500;
   font-size: 14px;
-
+  /* text-decoration-line: overline underline; */
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  /* position: absolute;  */
 }
+
+
 
 .secondphase-subpara-two{
   display: grid;
@@ -105,9 +113,6 @@
   display: grid;
   width: 100%;
   grid-auto-flow: column;
-  grid-column-gap: 40px;
-  grid-column-gap: 3px;
-  column-gap: 3px;
   padding: 50px 0;
 }
 .flowbox-one{
@@ -167,6 +172,9 @@
 .thirdphase-para p:nth-child(1){
   color:#00a9ff;
   gap: 10px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  /* position: absolute; */
 
 }
 
@@ -228,6 +236,7 @@
   border: none;
   outline: none;
   background-color: #ffffff;
+  padding: 0px 0px 0px 11px;
 }
 
 .subform-item2{
@@ -259,6 +268,7 @@
   border: none;
   outline: none;
   background-color: #ffffff;
+  padding: 0px 0px 0px 11px;
 }
 .subform-item3{
   width: 624px;
@@ -268,30 +278,34 @@
   border: solid #DDDDDD;
   padding: 14px 0px 0px 14px;
 }
-.subform-item3 input{
+.subform-item3 textarea{
   border: none;
   outline: none;
   background-color: #ffffff;
+  width: 603px;
+  height: 58px;
    
 }
 
 .subform-two{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:624px;
-  height:48px;
   border-radius: 10px;
-  padding:16px,24px;
-  gap:10px;
-  border: solid #00a9ff
+  border: solid #00a9ff;
+  cursor: pointer;
+  
+}
+.subform-two:hover{
+  opacity:0.6;
 }
 
 .subform-two input{
-  color: #00a9ff;
-  border: none;
-  outline: none;
-  background-color: #ffffff;
+    width: 619px;
+    height: 43px;
+    border: #00a9ff;
+    color: #00a9ff;
+    outline: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+  
 }
 
 .flowone-para{
@@ -311,13 +325,10 @@
 
 .fourthphase{
   display: grid; 
-  grid-template-columns: 70% 30%; 
-  gap: 24px;
-  display: grid;
+  grid-auto-flow: column;
   align-items: center;
-  justify-content: center;
-  padding: 80px;
-  column-gap: 40px;
+  padding: 80px 80px 0px 80px;
+  column-gap: 182px;
   
 }
 
@@ -326,6 +337,7 @@
     display: grid;
     padding-top: 27px;
     gap: 24px; 
+    text-align: center;
 } 
 
 .fourth-sub-two img{
@@ -335,33 +347,35 @@
 
 .fourth-sub-two h5{
   color: #00a9ff;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  /* position: absolute; */
 }
 
-.fourth-sub-two h1{
-  display: flex;
-  justify-content: center;
-  width: 464px;
-}
+/* .fourth-sub-two h1{
+  width:464px; 
+} */
 
 .fourth-sub-two span{
   color: #00a9ff;
 }
 
 .fourth-sub-two p{ 
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  width: 494px;
   color: #777777;
 }
 
-.fourth-sub-one{
+
+/* .fourth-sub-one{
   display: grid;
   max-width: 688px;
   max-height: 528px;
   gap: 24px;
-
 }
+
 
 .fourth-one-item1 p{
   width: 688px;
@@ -416,5 +430,64 @@
   display: flex;
   align-items: center;
   padding-left: 36px;
+} */
+ 
+@media (max-width: 600px) {
+  .img1{
+    background-image: url(../public//mobile-family.svg);
+  }
+  
+ 
 }
 
+
+
+.accordion {
+  max-width: 688px;
+ 
+}
+
+.accordion-item {
+  width:688px;
+  margin:20px;
+  padding:10px;
+  border-radius:8px;
+  border: solid #cbecfd ;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.accordion-title {
+  font-size: 16px;
+}
+
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.accordion-content {
+  padding: 10px;
+  color: #777777;
+  display: none;
+}
+
+details[open] .accordion-content {
+  display: block;
+}
+
+details[open] .accordion-header {
+  background-color: #ffffff;
+}
+
+.accordion-header::marker {
+  display: none;
+}

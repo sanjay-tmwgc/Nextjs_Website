@@ -1,0 +1,88 @@
+
+.privacy-sub-one{
+    padding-top: 40px;
+    padding-right: 80px;
+    padding-bottom: 18px;
+    padding-left: 80px;
+    gap: 32px;
+    display: grid
+}
+.privacy-sub-one p{
+    color:#777777
+}
+#home{
+    text-decoration: none;
+    color: #00a9ff;
+}
+.privacy-sub-one span{
+    color:#00a9ff;
+}
+
+.privacy-table{
+    padding: 20px 80px 75px;
+} 
+
+.privacy-table-sec1{
+    display: grid;
+    grid-auto-flow: column;
+}
+.privacy-table-sec2{
+    display: grid;
+    grid-auto-flow: column;
+}
+.privacy-table-sec3{
+    display: grid;
+    grid-auto-flow: column;
+}
+.privacy-table-item1{
+    border: solid #00a9ff 1px;
+    border-radius: 10px;
+    padding:24px;
+    margin: 0px 20px 15px 0px;
+    display: grid;
+    gap: 24px;
+}
+.privacy-table-item2{
+    border: solid #00a9ff 1px;
+    border-radius: 10px;
+    padding:24px;
+    margin: 0px 0px 15px 20px;
+    display: grid;
+    gap: 24px;
+}
+.privacy-table-item3{
+    border: solid #00a9ff 1px;
+    border-radius: 10px;
+    padding:24px;
+    margin: 15px 20px 15px 0px;
+    display: grid;
+    gap: 24px;
+}
+.privacy-table-item4{
+    border: solid #00a9ff 1px;
+    border-radius: 10px;
+    padding:24px;
+    margin: 15px 0px 15px 20px;
+    display: grid;
+    gap: 24px;
+}
+.privacy-table-item5{
+    border: solid #00a9ff 1px;
+    border-radius: 10px;
+    padding: 24px 7px 24px 24px;
+    margin: 15px 20px 0px 0px;
+    display: grid;
+    gap: 24px;
+}
+.privacy-table-item6{
+    border: solid #00a9ff 1px;
+    border-radius: 10px;
+    padding:24px;
+    margin: 15px 0px 0px 20px;
+    display: grid;
+    gap: 24px;
+}
+
+
+
+
