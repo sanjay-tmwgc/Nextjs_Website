@@ -9,19 +9,27 @@
 .img1{ 
   background-image: url(../public//img.svg);
   background-size: cover;
-  /*position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* width: 1440px; */
-  /* height: 952px; */
-  z-index: -1;
+  /* position: absolute;  */
+  /* top: 0; 
+  left: 0; 
+  width: 1440px; 
+  height: 952px;  */
+  /* z-index: -1;
+  background-image: url(/_next/static/media/img.34d0cf4c.svg);
+    background-size: cover; */
+    /* position: absolute; */
+    padding-bottom: 200px;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
 
 } 
 
 
  
 .imagecontent h1 {
-  max-width: 37rem;
+  width: 610px;
   font-size: 64px;
   font-weight: 700;
   padding: 30px 0 0 0;
@@ -32,6 +40,7 @@
   color: #00a9ff;
   size: 14px;
   line-height: 16.42px;
+  text-decoration: overline underline;
 }
 .imagecontent{
   display: grid;
@@ -57,8 +66,10 @@
 
 .buttontwo{
   color:#00a9ff;
-  display: grid;
-  grid-template-columns: 1fr 8fr;
+  /* display: grid;
+  grid-template-columns: 1fr 8fr; */
+  display:flex;
+  gap:10px;
 }
 
 .secondphase{
@@ -83,9 +94,9 @@
   color: #00a9ff;
   font-weight: 500;
   font-size: 14px;
-  /* text-decoration-line: overline underline; */
-  border-top: solid 1px;
-  border-bottom: solid 1px;
+  text-decoration: overline underline; 
+  /* border-top: solid 1px;
+  border-bottom: solid 1px; */
   /* position: absolute;  */
 }
 
@@ -113,13 +124,14 @@
   display: grid;
   width: 100%;
   grid-auto-flow: column;
-  padding: 50px 0;
+  padding: 50px 57px;
+  gap:20px;
 }
 .flowbox-one{
   display: grid;
   place-content: center;
-  max-width: 400px;
-  max-height: 586px;
+  /* max-width: 400px;
+  max-height: 586px; */
   padding: 40px;
   border-radius: 10px;
   border: solid #00a9ff;
@@ -130,8 +142,8 @@
 .flowbox-two{
   display: grid;
   place-content: center;
-  max-width: 400px;
-  max-height: 496px;
+  /* max-width: 400px;
+  max-height: 496px; */
   padding: 40px;
   border-radius: 10px;
   border: solid #00a9ff;
@@ -141,8 +153,8 @@
 }.flowbox-three{
   display: grid;
   place-content: center;
-  max-width: 400px;
-  max-height: 586px;
+  /* max-width: 400px;
+  max-height: 586px; */
   padding: 40px;
   border-radius: 10px;
   border: solid #00a9ff;
@@ -151,10 +163,9 @@
 
 .thirdphase{
     display: grid;
-    grid-template-columns: 10fr 10fr;
+    grid-auto-flow: column;
     align-items: center;
     justify-content: center;
-    grid-column-gap: 40px;
     padding: 80px;
     column-gap: 40px;
     background-color: #ecfaff;
@@ -172,8 +183,9 @@
 .thirdphase-para p:nth-child(1){
   color:#00a9ff;
   gap: 10px;
-  border-top: solid 1px;
-  border-bottom: solid 1px;
+  text-decoration: overline underline; 
+  /* border-top: solid 1px;
+  border-bottom: solid 1px; */
   /* position: absolute; */
 
 }
@@ -271,7 +283,7 @@
   padding: 0px 0px 0px 11px;
 }
 .subform-item3{
-  width: 624px;
+  width: 613px;
   height: 80px;
   color: #dddddd;
   border-radius: 10px;
@@ -282,15 +294,16 @@
   border: none;
   outline: none;
   background-color: #ffffff;
-  width: 603px;
+  width: 590px;
   height: 58px;
    
 }
 
 .subform-two{
-  border-radius: 10px;
-  border: solid #00a9ff;
+  /* border-radius: 10px;
+  border: solid #00a9ff; */
   cursor: pointer;
+  margin-top: 20px;
   
 }
 .subform-two:hover{
@@ -298,9 +311,9 @@
 }
 
 .subform-two input{
-    width: 619px;
+    width: 613px;
     height: 43px;
-    border: #00a9ff;
+    border: solid #00a9ff;
     color: #00a9ff;
     outline: none;
     border-radius: 10px;
@@ -313,6 +326,14 @@
  gap: 8px;
 }
 
+/* .flow-empty{
+    border: solid #00a9ff;
+    height: 117px;
+    width: 882px;
+    border-bottom: none;
+    border-radius: 5px;
+    position: absolute;
+} */
 .flowtwo-para{
   display: grid;
   gap: 8px;
@@ -331,116 +352,6 @@
   column-gap: 182px;
   
 }
-
-
-.fourth-sub-two{
-    display: grid;
-    padding-top: 27px;
-    gap: 24px; 
-    text-align: center;
-} 
-
-.fourth-sub-two img{
-  width: 360px;
-  height:536px;
-}
-
-.fourth-sub-two h5{
-  color: #00a9ff;
-  /* display: flex;
-  justify-content: center; */
-  border-top: solid 1px;
-  border-bottom: solid 1px;
-  /* position: absolute; */
-}
-
-/* .fourth-sub-two h1{
-  width:464px; 
-} */
-
-.fourth-sub-two span{
-  color: #00a9ff;
-}
-
-.fourth-sub-two p{ 
-  text-align: center;
-  width: 494px;
-  color: #777777;
-}
-
-
-/* .fourth-sub-one{
-  display: grid;
-  max-width: 688px;
-  max-height: 528px;
-  gap: 24px;
-}
-
-
-.fourth-one-item1 p{
-  width: 688px;
-  height: 72px;
-  border-radius: 10px;
-  border:solid #cbecfd;
-  display: flex;
-  align-items: center;
-  padding-left: 36px;
-}
-.fourth-one-item2 p{
-  width: 688px;
-  height: 72px;
-  border-radius: 10px;
-  border:solid #cbecfd;
-  display: flex;
-  align-items: center;
-  padding-left: 36px;
-}
-.fourth-one-item3 p{
-  width: 688px;
-  height: 72px;
-  border-radius: 10px;
-  border:solid #cbecfd;
-  display: flex;
-  align-items: center;
-  padding-left: 36px;
-}
-.fourth-one-item4 p{
-  width: 688px;
-  height: 72px;
-  border-radius: 10px;
-  border:solid #cbecfd;
-  display: flex;
-  align-items: center;
-  padding-left: 36px;
-}
-.fourth-one-item5 p{
-  width: 688px;
-  height: 72px;
-  border-radius: 10px;
-  border:solid #cbecfd;
-  display: flex;
-  align-items: center;
-  padding-left: 36px;
-}
-.fourth-one-item6 p{
-  width: 688px;
-  height: 72px;
-  border-radius: 10px;
-  border:solid #cbecfd;
-  display: flex;
-  align-items: center;
-  padding-left: 36px;
-} */
- 
-@media (max-width: 600px) {
-  .img1{
-    background-image: url(../public//mobile-family.svg);
-  }
-  
- 
-}
-
-
 
 .accordion {
   max-width: 688px;
@@ -491,3 +402,219 @@ details[open] .accordion-header {
 .accordion-header::marker {
   display: none;
 }
+.fourth-sub-two{
+    display: grid;
+    padding-top: 27px;
+    gap: 24px; 
+    text-align: center;
+    justify-content: center;
+} 
+
+.fourth-sub-two img{
+  width: 360px;
+  height:536px;
+}
+
+.fourth-sub-two h5{
+  color: #00a9ff;
+  text-decoration: overline underline;
+  /* display: flex;
+  justify-content: center; */
+  /* border-top: solid 1px;
+  border-bottom: solid 1px; */
+  /* position: absolute; */
+}
+
+/* .fourth-sub-two h1{
+  width:464px; 
+} */
+
+.fourth-sub-two span{
+  color: #00a9ff;
+}
+
+.fourth-sub-two p{ 
+  text-align: center;
+  width: 494px;
+  color: #777777;
+}
+
+ 
+@media (min-width: 320px) and (max-width: 650px) {
+   .img1{
+    background-image: url(../public//mobile-family.svg) 360px 346px;
+    /* width:360px;
+    height: 346px; */
+
+  } 
+
+  .thirdphase-para h1{
+    max-height: unset;
+  }
+
+  .imagecontent h1{
+    width:unset;
+    font-size: 32px;
+  }
+  
+  .imagecontent{
+    /* padding: 336px 24px 30px; */
+    gap:16px;
+    /* background: #E9F6FD; */
+    
+  }
+  .buttontwo{
+    display: flex;
+    gap:10px;
+  }
+  
+  
+  .secondphase{
+    grid-auto-flow: row;
+    gap: 32px;
+    padding: 35px 40px 0px;
+  }
+
+  .secondphase img{
+    width:312px;
+    height:340px;
+
+  }
+
+  .secondphase-para{
+    gap:24px;
+  }
+  
+  .flowdiagram{
+    grid-auto-flow: row;
+    gap:unset;
+    /* margin: 0px 24px;
+    width: 375px; */
+
+  }
+
+  .flexbox-one, .flexbox-two, .flexbox-three{
+    width: 425px;
+  }
+  
+  .thirdphase{
+    grid-auto-flow: row;
+    row-gap: 61px;
+    padding: 50px 34px; 
+    /* justify-content: unset; */
+  }
+
+  /* .thirdphase-para{
+    gap:20px;
+  } */
+
+  .vertical-empty{
+    width: 0px;
+    height: 44px;
+    border: solid #00a9ff;
+    position: unset;
+    margin: 0px 50%;
+  }
+
+  .thirdphase-form{
+    width:unset;
+    height:410px; 
+    padding: 20px;
+    margin-top: 24px;
+  }
+  
+  .subform-item1, .subform-item2{
+    display: contents;
+  }
+
+  .subform-item1 div, .subform-item2 div{
+    width:unset;
+    height:38px;
+  }
+
+  
+  .subform-one{
+    height:328px;
+    gap:0;
+    width: auto;
+  }
+
+   .subform-item3 textarea {
+    width: -webkit-fill-available ;
+    height: 61px;
+  }
+  .subform-item3 {
+    width:auto;
+    height:80px;
+  }
+  .subform-two input , .subform-two{
+    width: -webkit-fill-available;
+    height:40px;
+  } 
+
+
+  .subform-two{
+    margin: 0px;
+    border: none;
+  }
+
+  .fourthphase{
+    grid-auto-flow: row;
+    padding: 18px 18px 0px;
+  }
+  
+  .accordion{
+    width:unset;
+    /* height:516px; */
+    gap:24px;
+  }
+
+  .accordion-item{
+    width:unset;
+  }
+  .fourth-sub-two{
+    padding-top: 92px;
+  }
+  .fourth-sub-two img{
+    width:312px;
+    height: 464px;
+    place-items: center;
+    
+  }
+
+  .fourth-sub-two p{
+    width: auto;
+    /*height: 48px; */
+    padding: 18px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+  
+  .img1{
+    background-image: url(../public//img.svg);
+    background-size: cover;
+    background-position-x:right ;
+    height: 100vh;
+
+  }
+  .secondphase{
+    grid-auto-flow: row;
+    gap: 32px;
+    padding: 35px 40px 0px;
+  }
+  .thirdphase{
+    grid-auto-flow: row;
+    row-gap: 61px;
+    padding: 50px 34px; 
+    /* justify-content: unset; */
+  }
+
+  .fourthphase{
+    grid-auto-flow: row;
+    padding: 18px 18px 0px;
+  }
+}
+
+
+

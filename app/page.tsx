@@ -2,15 +2,23 @@ import React from 'react'
 import "./page.css";
 import Header from "./Components/Header/page"
 import Footer from "./Components/Footer/footer"
+import Head from 'next/head';
+import Link from 'next/link';
 
 
 export default function pages() {
   return (
     <>
-   <div >
-    {/* first phase */}
-    <div className='img1'>
-      {/* <img src='/img.svg' /> */}
+      {/* <Head>
+      {/*work sans }
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+      </Head> */}
+      <div > 
+        {/* first phase */}
+        <div className='img1'>
+        {/* <img src='/img.svg' /> */}
     <Header/>
     <div className='imagecontent'>
       <div className='imagecontent-welcome'>
@@ -34,7 +42,7 @@ export default function pages() {
         </div>
       </div>
     </div>
-    </div>
+        </div>
 
     {/* second phase  */}
     <div className='secondphase'>
@@ -67,6 +75,8 @@ export default function pages() {
             <p>Whether you're looking for immediate income or a deferred annuity to supplement your retirement savings, our team of experts will help you navigate the options and find the right solution for your needs.</p>
           </div> 
         </div>
+        <div className='flow-empty-two'></div>
+        <div className='vertical-empty'></div>
         <div className='flowbox-two'>
           <img src="/flow-hand-holding-heart.svg"/>
           <p>LIFE INSURANCE</p>
@@ -77,6 +87,7 @@ export default function pages() {
             <p>With Sky Financial, you can rest assured that your loved ones will be taken care of no matter what the future holds.</p>
           </div>
         </div>
+        <div className='vertical-empty'></div>
         <div className='flowbox-three'>
           <img src="/flow-profit.svg"/>
           <p>TAX BENEFIT PROGRAMS</p>
@@ -102,25 +113,25 @@ export default function pages() {
           <div className='subform-item1'>
             <div>
               <img src="/formuser.svg" />
-              <input type='text' placeholder='Name' color='#777777' required/>
+              <input type='text' placeholder='Name' id='name' color='#777777' required/>
             </div>
             <div>
               <img src="/formuser.svg" />
-              <input type='text' placeholder='Subject' color='#777777'required/>
+              <input type='text' placeholder='Subject'id='subject' color='#777777'required/>
             </div>
           </div>
           <div className='subform-item2'>
             <div>
               <img src="formmail.svg" />
-              <input type='email' placeholder='E-mail'color='#777777' required/>
+              <input type='email' placeholder='E-mail'id='email' color='#777777' required/>
             </div>
             <div>
               <img src="formphone.svg" />
-              <input type='string' placeholder='Phone'color='#777777' required/>
+              <input type='string' placeholder='Phone'id='phone' color='#777777' required/>
             </div>
           </div>
           <div className='subform-item3'>
-            <textarea placeholder='Message' color='#777777' required></textarea>
+            <textarea placeholder='Message' id='message' color='#777777' required></textarea>
           </div>
           </div>
           <div className='subform-two'>
@@ -217,18 +228,15 @@ export default function pages() {
         <div>
           <p>Have questions about life insurance? Explore our FAQs for clear, concise answers to help you make informed decisions about your coverage options.</p>
         </div>
-        <img src="/fourthphase-man.svg"/>
+        <img src="/fourthphase-man.svg" id='fourth-img'/>
       </div>
     </div>
     <div>
      {/* <Footer/> */}
     </div> 
-    
-   </div>
-  
-    
-
-    
-</>
+    <script src='/Components/Form/form.js'></script>
+      </div>
+ 
+    </>
   )
 }

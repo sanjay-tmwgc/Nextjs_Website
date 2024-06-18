@@ -83,6 +83,25 @@
     gap: 24px;
 }
 
+@media (min-width: 320px) and (max-width: 650px) {
+    .privacy-table-sec1, .privacy-table-sec2, .privacy-table-sec3{
+        grid-auto-flow: row;
+    }
+
+    .privacy-table{
+        width: 312px;
+        height: 1234px;
+        display: contents;
+    }
+
+    .privacy-sub-one{
+        padding: 40px 32px 18px 33px;
+    }
+
+    .privacy-table-item1, .privacy-table-item2, .privacy-table-item3, .privacy-table-item4, .privacy-table-item5, .privacy-table-item6{
+        margin: 15px 30px;
+    }
+}
 
 
 

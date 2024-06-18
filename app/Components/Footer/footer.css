@@ -60,3 +60,59 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+@media (min-width: 320px) and (max-width: 650px) {
+  .footer-top{
+   grid-auto-flow: row;
+   padding:24px;
+   gap:28px;
+  }
+
+  .footer-details{
+    gap:16px;
+  }
+
+  .footer-bottom{
+    grid-auto-flow: row;
+    gap:16px;
+    padding: 16px 24px;
+  }
+
+  .footer-navigate ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-top p {
+    width:unset;
+  }
+ 
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+   .footer-top{
+   grid-auto-flow: row;
+   padding:24px;
+   gap:28px;
+  }
+
+  .footer-details{
+    gap:16px;
+    /* grid-template-columns: 27% 27% 46%; */
+  }
+
+  .footer-bottom{
+    grid-auto-flow: row;
+    gap:16px;
+    padding: 16px 24px;
+  }
+
+  .footer-navigate ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-top p {
+    width:unset;
+  }
+}
