@@ -7,7 +7,8 @@ export default function page() {
     
     <div className='footer'>
     <div className='footer-top'>
-      <img src="/footer-logo.svg" />
+      <img src="/footer-logo.svg" id='img-desk'/>
+      <img src="/logo.svg" id='img-mob' />
       <p>Welcome to <span>SKY FINANCIAL</span>, where we prioritize protecting your future above all else. Our About Us section offers a glimpse into who we are, our values, and why we're dedicated to ensuring your peace of mind. Meet our experienced team, learn about our history, and discover how our personalized approach to life insurance can safeguard your loved ones' financial security. At [Agency Name], we're here to guide you toward a future of confidence and security.</p>
       <div className='footer-details'>
         <div className='footer-phone'>

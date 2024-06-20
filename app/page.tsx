@@ -2,24 +2,21 @@ import React from 'react'
 import "./page.css";
 import Header from "./Components/Header/page"
 import Footer from "./Components/Footer/footer"
-import Head from 'next/head';
 import Link from 'next/link';
+import { Work_Sans } from 'next/font/google';
+const work_sans = Work_Sans ({ subsets: ['latin'] });
+
 
 
 export default function pages() {
   return (
     <>
-      {/* <Head>
-      {/*work sans }
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
-      </Head> */}
       <div > 
         {/* first phase */}
-        <div className='img1'>
+        <div className='img1' >
         {/* <img src='/img.svg' /> */}
     <Header/>
+    <div className='img1-mob'></div>
     <div className='imagecontent'>
       <div className='imagecontent-welcome'>
         <p>WELCOM TO SKY FINANCIAL</p>

@@ -40,8 +40,11 @@
   color: #00a9ff;
   size: 14px;
   line-height: 16.42px;
-  text-decoration: overline underline;
-}
+  text-decoration: overline underline; 
+  /* border-top: solid #89CFF3 1px; 
+  border-bottom: solid #89CFF3 1px;
+  padding: 2px;*/
+} 
 .imagecontent{
   display: grid;
   row-gap: 10px;
@@ -136,7 +139,7 @@
   border-radius: 10px;
   border: solid #00a9ff;
   gap: 16px;
-  
+  margin-top: 68px;
 }
 
 .flowbox-two{
@@ -150,7 +153,9 @@
   gap: 16px;
   align-self: end;
 
-}.flowbox-three{
+}
+
+.flowbox-three{
   display: grid;
   place-content: center;
   /* max-width: 400px;
@@ -159,6 +164,7 @@
   border-radius: 10px;
   border: solid #00a9ff;
   gap: 16px;
+  margin-top: 68px;
 }
 
 .thirdphase{
@@ -177,7 +183,7 @@
   align-items: center;
   row-gap: 24px;
   max-width: 552px;
-  max-height: 220px;
+  /* max-height: 220px; */
 }
 
 .thirdphase-para p:nth-child(1){
@@ -199,12 +205,13 @@
 
 .thirdphase-para h1{
   max-width:552px;
-  max-height: 94px;
+  /* max-height: 94px; */
 }
 
 .questionmark,.thirdphase-subword{
   color: #00a9ff;
 }
+
 .thirdphase-form{
   display: grid;
   background-color: white;
@@ -216,12 +223,14 @@
   border: 1px ;
   border: solid #CBECFD
 }
+
 .subform-one{
   display: grid;
   width: 624px;
   height: 216px;
   gap:24px;
 }
+
 .subform-item1{
   display: grid;
   grid-template-columns: auto auto;
@@ -326,14 +335,24 @@
  gap: 8px;
 }
 
-/* .flow-empty{
+.flow-empty{
     border: solid #00a9ff;
-    height: 117px;
-    width: 882px;
+    height: 71px;
+    width: -webkit-fill-available;
+    margin: 0px 192px;
     border-bottom: none;
     border-radius: 5px;
+    position: absolute;   
+}
+
+.flow-empty-two{
+    width: 0px;
+    height: 137px;
+    border: solid #00a9ff 2px;
     position: absolute;
-} */
+    margin: 0px 50%;
+}
+
 .flowtwo-para{
   display: grid;
   gap: 8px;
@@ -345,21 +364,21 @@
 }
 
 .fourthphase{
-  display: grid; 
+  display: grid;
   grid-auto-flow: column;
   align-items: center;
-  padding: 80px 80px 0px 80px;
+  padding: 40px 47px 0px 49px;
+  grid-column-gap: 182px;
   column-gap: 182px;
-  
 }
 
 .accordion {
-  max-width: 688px;
+  max-width: 590px;
  
 }
 
 .accordion-item {
-  width:688px;
+  max-width:688px;
   margin:20px;
   padding:10px;
   border-radius:8px;
@@ -408,6 +427,7 @@ details[open] .accordion-header {
     gap: 24px; 
     text-align: center;
     justify-content: center;
+    place-items: center;
 } 
 
 .fourth-sub-two img{
@@ -439,17 +459,31 @@ details[open] .accordion-header {
   color: #777777;
 }
 
+/* Mobile view */
  
 @media (min-width: 320px) and (max-width: 650px) {
-   .img1{
-    background-image: url(../public//mobile-family.svg) 360px 346px;
-    /* width:360px;
-    height: 346px; */
+   .img1-mob{
+    background-image: url(/_next/static/media/mobile-family.f4ab96b2.svg);
+    height: 381px;
+    top: -86px;
+    overflow: hidden;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 
   } 
+  .img1{
+    background-image: unset;
+    padding: unset;
+  }
 
   .thirdphase-para h1{
     max-height: unset;
+  }
+
+  .flow-empty-two{
+    display: none;
   }
 
   .imagecontent h1{
@@ -458,11 +492,21 @@ details[open] .accordion-header {
   }
   
   .imagecontent{
-    /* padding: 336px 24px 30px; */
+    padding: 49px 42px;
     gap:16px;
-    /* background: #E9F6FD; */
+    background: #E9F6FD; 
     
   }
+
+  .flow-empty{
+    display: none;
+  }
+
+  .flowbox-three, .flowbox-two, .flexbox-one{
+    margin-top: unset;
+    margin: unset;
+  }
+
   .buttontwo{
     display: flex;
     gap:10px;
@@ -488,6 +532,8 @@ details[open] .accordion-header {
   .flowdiagram{
     grid-auto-flow: row;
     gap:unset;
+    padding-top: 0px;
+    
     /* margin: 0px 24px;
     width: 375px; */
 
@@ -495,6 +541,8 @@ details[open] .accordion-header {
 
   .flexbox-one, .flexbox-two, .flexbox-three{
     width: 425px;
+    
+
   }
   
   .thirdphase{
@@ -574,6 +622,7 @@ details[open] .accordion-header {
   }
   .fourth-sub-two{
     padding-top: 92px;
+    
   }
   .fourth-sub-two img{
     width:312px;
@@ -589,20 +638,39 @@ details[open] .accordion-header {
   }
 }
 
+/* Tab view */
+
 @media (min-width: 651px) and (max-width: 1024px) {
   
   .img1{
-    background-image: url(../public//img.svg);
+    background-image: url(/_next/static/media/img.34d0cf4c.svg);
     background-size: cover;
-    background-position-x:right ;
-    height: 100vh;
+    background-position-x: right;
+    height: 150vh;
+  }
+  .imagecontent{
+    display: grid;
+    grid-row-gap: 10px;
+    row-gap: 10px;
+    grid-row-gap: 24px;
+    row-gap: 24px;
+    padding: 31px 0 0 31px;
+  }
+  .imagecontent h1{
+    font-size: 20px;
+    width: 357px;
+  }
 
+  .imagecontent-para{
+    max-width: 19rem;
+    row-gap: 7px;
   }
   .secondphase{
     grid-auto-flow: row;
     gap: 32px;
     padding: 35px 40px 0px;
   }
+
   .thirdphase{
     grid-auto-flow: row;
     row-gap: 61px;
@@ -610,11 +678,44 @@ details[open] .accordion-header {
     /* justify-content: unset; */
   }
 
+  .flow-empty, .flow-empty-two{
+    display: none;
+  }
+
+  .accordion{
+    max-width:unset;
+    width:unset;
+    /* height:516px; */
+    gap:24px;
+  }
+  
+  .accordion-item {
+    width:unset;
+    max-width: 969px;
+
+  }
   .fourthphase{
     grid-auto-flow: row;
     padding: 18px 18px 0px;
   }
-}
+
+  .flowdiagram{
+    grid-auto-flow: row;
+    gap:15px;
+  }
+
+  .flexbox-one{
+    margin-right: 302px;
+  }
+
+  .flexbox-two{
+    margin: 0px 151px;
+  }
+
+  .flexbox-three{
+    margin: 0px 0px 0px 302px;
+  }
+} 
 
 
 
