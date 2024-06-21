@@ -1,13 +1,22 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import './terms.css'
+import { useRouter } from 'next/navigation'
 
 
 export default function page() {
+    const router = useRouter();
+
+    const back = () => {
+        router.push('../');
+    }
+
     return (
           <div className='termspage'>
+            {/* <Link href='./' id='terms-home'></Link> */}
             <div className='terms-sub-one'>
-                <p> <Link href='./' id='terms-home'>Home </Link>&#62; Terms & Conditions</p>
+                <p> <button onClick={back} >Home</button>&#62; Terms & Conditions</p>
                 <h1>Terms of use<span>.</span></h1>
             </div>
             <div className='terms-table'>

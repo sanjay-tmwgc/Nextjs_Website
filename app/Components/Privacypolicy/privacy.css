@@ -13,6 +13,12 @@
     color:#777777
 }
 
+.privacy-sub-one p button{
+    background-color: white;
+    border: none;
+    color: #00a9ff;
+}
+
 .privacy-sub-one{
     font-family: 'roboto';
 }

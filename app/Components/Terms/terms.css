@@ -10,6 +10,12 @@
     display: grid
 }
 
+.terms-sub-one p button{
+    background-color: white;
+    border: none;
+    color: #00a9ff;
+}
+
 .terms-table h3{
     font-family: 'roboto'
 }
