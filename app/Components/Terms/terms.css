@@ -1,3 +1,6 @@
+.termspage{
+    font-family: 'work_sans';
+}
 .terms-sub-one{
     padding-top: 40px;
     padding-right: 80px;
@@ -6,9 +9,15 @@
     gap: 32px;
     display: grid
 }
-.terms-sub-one p{
-    color:#777777
+
+.terms-table h3{
+    font-family: 'roboto'
 }
+
+.terms-table p{
+    color: #777777;
+}
+
 #terms-home{
     text-decoration: none;
     color: #00a9ff;
@@ -104,9 +113,7 @@
     display: grid;
     gap: 24px;
 }
-.terms-table p{
-    color: #777777;
-}
+
 
 @media (min-width: 320px) and (max-width: 650px) {
     .terms-table-sec1, .terms-table-sec2, .terms-table-sec3, .terms-table-sec4{

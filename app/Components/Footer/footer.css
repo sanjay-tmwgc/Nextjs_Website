@@ -1,3 +1,6 @@
+.footer {
+  font-family: 'work_sans';
+}
 .footer-top{
     display: grid;
     grid-auto-flow: column;

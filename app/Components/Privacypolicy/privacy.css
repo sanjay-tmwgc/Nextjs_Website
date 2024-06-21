@@ -1,4 +1,6 @@
-
+.privacypolicy{
+    font-family: 'work_sans';
+}
 .privacy-sub-one{
     padding-top: 40px;
     padding-right: 80px;
@@ -9,6 +11,10 @@
 }
 .privacy-sub-one p{
     color:#777777
+}
+
+.privacy-sub-one{
+    font-family: 'roboto';
 }
 #home{
     text-decoration: none;
@@ -22,6 +28,9 @@
     padding: 20px 80px 75px;
 } 
 
+.privacy-table p{
+    color: #777777;
+}
 .privacy-table-sec1{
     display: grid;
     grid-auto-flow: column;
@@ -42,6 +51,10 @@
     display: grid;
     gap: 24px;
 }
+.privacy-table-item1 h3, .privacy-table-item2 h3,.privacy-table-item3 h3,.privacy-table-item4 h3,.privacy-table-item5 h3,.privacy-table-item6 h3{
+    font-family: 'roboto';
+}
+
 .privacy-table-item2{
     border: solid #00a9ff 1px;
     border-radius: 10px;

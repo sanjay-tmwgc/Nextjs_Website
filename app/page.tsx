@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useState }from 'react'
 import "./page.css";
 import Header from "./Components/Header/page"
 import Footer from "./Components/Footer/footer"
+import Form from "./Components/Form/page";
 import Link from 'next/link';
-import { Work_Sans } from 'next/font/google';
-const work_sans = Work_Sans ({ subsets: ['latin'] });
-
 
 
 export default function pages() {
@@ -45,6 +43,8 @@ export default function pages() {
     <div className='secondphase'>
       <div>
         <img src='/anime1.svg'/>
+        {/* <img src='/anime2-desk.svg'className='image'/>
+        <img src='/anime3-desk.svg'className='image'/> */}
       </div>
       <div className='secondphase-para'>
         <div className='secondphase-subpara-one'>
@@ -105,7 +105,8 @@ export default function pages() {
         <p>Contact <span className='thirdphase-subword'>SKY FINANCIAL </span>today to schedule a consultation with one of our experienced agents. We're here to answer your questions, address your concerns, and help you find the perfect insurance solutions for your needs.</p>
       </div>
       <div className='thirdphase-form'>
-        <form>  
+        <Form/>
+        {/* <form>  
           <div className='subform-one'>
           <div className='subform-item1'>
             <div>
@@ -134,7 +135,8 @@ export default function pages() {
           <div className='subform-two'>
           <input type='submit' value='Get in touch'/>  
           </div>
-        </form>  
+        </form>   */}
+        
       </div>
     </div>
 

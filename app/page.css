@@ -25,8 +25,58 @@
     overflow: hidden;
 
 } 
+.image-container {
+  position: relative;
+  width: 300px; /* adjust the width and height to fit your images */
+  height: 200px;
+}
 
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s;
+}
 
+.image:nth-child(1) {
+  z-index: 3;
+  opacity: 1;
+}
+
+.image:nth-child(2) {
+  z-index: 2;
+  opacity: 0;
+}
+
+.image:nth-child(3) {
+  z-index: 1;
+  opacity: 0;
+}
+
+.image-container:hover .image:nth-child(1) {
+  opacity: 0;
+}
+
+.image-container:hover .image:nth-child(2) {
+  opacity: 1;
+}
+
+.image-container:hover .image:nth-child(3) {
+  opacity: 1;
+}
+
+.image-container:hover .image:nth-child(3) {
+  animation: fadeOut 3s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
  
 .imagecontent h1 {
   width: 610px;
@@ -35,7 +85,7 @@
   padding: 30px 0 0 0;
 }
 .imagecontent-welcome p {
-  font-family: sans-serif;
+  font-family: 'work_sans';
   font-weight: 500;
   color: #00a9ff;
   size: 14px;
@@ -65,6 +115,7 @@
   font-size: 14px;
   line-height: 19px;
   row-gap: 8px;
+  font-family: 'work_sans';
 }
 
 .buttontwo{
@@ -73,6 +124,7 @@
   grid-template-columns: 1fr 8fr; */
   display:flex;
   gap:10px;
+  font-family: 'work_sans';
 }
 
 .secondphase{
@@ -101,6 +153,7 @@
   /* border-top: solid 1px;
   border-bottom: solid 1px; */
   /* position: absolute;  */
+  font-family: 'work_sans';
 }
 
 
@@ -110,6 +163,7 @@
   row-gap: 20px;
   color: #777777;
   font-size: 14px;
+  font-family: 'work_sans';
 }
 
 .secondphase-subpara-two p{
@@ -119,6 +173,7 @@
 
 .secondphase-subpara-one h1{
   max-width: 28rem;
+  font-family: 'roboto';
 }
 .dot-two{
   color:#00a9ff;
@@ -140,6 +195,7 @@
   border: solid #00a9ff;
   gap: 16px;
   margin-top: 68px;
+  font-family: 'work_sans';
 }
 
 .flowbox-two{
@@ -152,6 +208,7 @@
   border: solid #00a9ff;
   gap: 16px;
   align-self: end;
+  font-family: 'work_sans';
 
 }
 
@@ -165,6 +222,11 @@
   border: solid #00a9ff;
   gap: 16px;
   margin-top: 68px;
+  font-family: 'work_sans';
+}
+
+.flowbox-one h2 , .flowbox-two h2, .flowbox-three h2{
+  font-family: 'roboto';
 }
 
 .thirdphase{
@@ -175,6 +237,8 @@
     padding: 80px;
     column-gap: 40px;
     background-color: #ecfaff;
+    font-family: 'work_sans';
+    max-height: 790px;
 }
 
 .thirdphase-para{
@@ -205,6 +269,7 @@
 
 .thirdphase-para h1{
   max-width:552px;
+  font-family: 'roboto';
   /* max-height: 94px; */
 }
 
@@ -216,7 +281,7 @@
   display: grid;
   background-color: white;
   width: 688px;
-  height: 360px;
+  height: 410px;
   padding: 32px;
   gap: 32px;
   border-radius: 16px;
@@ -333,6 +398,7 @@
 .flowone-para{
  display: grid;
  gap: 8px;
+ color: #777777;
 }
 
 .flow-empty{
@@ -356,11 +422,13 @@
 .flowtwo-para{
   display: grid;
   gap: 8px;
+  color: #777777;
 }
 
 .flowthree-para{
   display: grid;
   gap: 8px;
+  color: #777777;
 }
 
 .fourthphase{
@@ -374,6 +442,7 @@
 
 .accordion {
   max-width: 590px;
+  font-family: 'roboto';
  
 }
 
@@ -435,9 +504,14 @@ details[open] .accordion-header {
   height:536px;
 }
 
+.fourth-sub-two h1{
+  font-family: 'roboto';
+}
+
 .fourth-sub-two h5{
   color: #00a9ff;
   text-decoration: overline underline;
+  font-family: 'work_sans';
   /* display: flex;
   justify-content: center; */
   /* border-top: solid 1px;
@@ -457,6 +531,7 @@ details[open] .accordion-header {
   text-align: center;
   width: 494px;
   color: #777777;
+  font-family: 'work_sans';
 }
 
 /* Mobile view */
@@ -516,11 +591,12 @@ details[open] .accordion-header {
   .secondphase{
     grid-auto-flow: row;
     gap: 32px;
+    place-items: center;
     padding: 35px 40px 0px;
   }
 
   .secondphase img{
-    width:312px;
+    width:413px;
     height:340px;
 
   }
@@ -566,7 +642,7 @@ details[open] .accordion-header {
 
   .thirdphase-form{
     width:unset;
-    height:410px; 
+    height:436px; 
     padding: 20px;
     margin-top: 24px;
   }
@@ -669,6 +745,7 @@ details[open] .accordion-header {
     grid-auto-flow: row;
     gap: 32px;
     padding: 35px 40px 0px;
+    place-items: center;
   }
 
   .thirdphase{
@@ -676,6 +753,11 @@ details[open] .accordion-header {
     row-gap: 61px;
     padding: 50px 34px; 
     /* justify-content: unset; */
+  }
+
+  .thirdphase-form{
+    height: 453px;
+    width: unset;
   }
 
   .flow-empty, .flow-empty-two{
@@ -702,17 +784,16 @@ details[open] .accordion-header {
   .flowdiagram{
     grid-auto-flow: row;
     gap:15px;
-  }
-
-  .flexbox-one{
+  }  
+  .flowbox-one{
     margin-right: 302px;
   }
 
-  .flexbox-two{
+  .flowbox-two{
     margin: 0px 151px;
   }
 
-  .flexbox-three{
+  .flowbox-three{
     margin: 0px 0px 0px 302px;
   }
 } 
