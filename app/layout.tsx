@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Serif, Work_Sans } from "next/font/google";
 import "./globals.css";
-import Footer from "./Components/Footer/footer"
+import Footer from "./Components/Footer/page";
 const inter = Inter({ subsets: ["latin"] });
-const work_sans = Work_Sans({ subsets: ['latin']});
-const roboto = Roboto_Serif({ subsets:['latin']});
+const work_sans = Work_Sans({ subsets: ["latin"], variable: "--font-work" });
+const roboto = Roboto_Serif({ subsets: ["latin"], variable: "--font-roboto" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,9 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={'${inter.className} ${work_sans.className} ${roboto.className}'}>
-        {children}</body>
-      <Footer/>
+      <body className={`${work_sans.variable} ${roboto.variable}`}>
+        {children}
+      </body>
+      <Footer />
     </html>
   );
 }
